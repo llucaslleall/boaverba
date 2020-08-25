@@ -5,18 +5,18 @@
 }
 
 h1 {
-  width: 509px;
+  width: 1050px;
   height: 68.5px;
   font-family: Roboto;
-  font-size: 25px;
+  font-size: 50px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 59px;
   letter-spacing: normal;
   color: #ffffff;
   position: absolute;
-  left: 30%;
+  left: 10%;
   right: 14.65%;
   top: 17.71%;
   bottom: 62.71%;
@@ -33,9 +33,13 @@ p {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: normal;
   text-align: center;
   color: #f2f2f2;
+  width: 500px;
+  height: 123px;
+  font-stretch: normal;
+  letter-spacing: normal;
 }
 
 .imagemPrincipal {
@@ -50,28 +54,41 @@ p {
   text-align: center;
   color: #333333;
   font-family: Roboto;
-  width: 100%;
+  width: 20%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 40%;
+  margin-left: 40%;
 }
 
 .textoInscrever {
-  width: 134px;
+  width: 200px;
   height: 16.5px;
   font-family: Roboto;
-  font-size: 17px;
+  font-size: 34px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 40px;
   letter-spacing: normal;
   color: #281748;
   text-align: center;
 }
 
-.mc-field-group {
+#caixaFormUm {
+  justify-content: center;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #f2f2f2;
+  border: 1px solid #f2671d;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(217, 30, 167, 0.3);
+  border-radius: 10px;
+}
+
+#caixaFormDois {
   justify-content: center;
   left: 0%;
   right: 0%;
@@ -93,9 +110,8 @@ section {
   background-color: #281748;
   padding-left: 50px;
   width: auto;
-  height: 200px;
-  padding-top: 300px;
-  
+  height: 350px;
+  padding: 80px;
 }
 
 .tituloConvidados {
@@ -112,7 +128,6 @@ section {
   line-height: normal;
   letter-spacing: normal;
   color: #f2f2f2;
-    
 }
 
 .convidado {
@@ -129,4 +144,12 @@ section {
   line-height: normal;
   letter-spacing: normal;
   color: #f47633;
+  text-align: center;
+}
+
+#img_redonda {
+  height: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20%;
 }
