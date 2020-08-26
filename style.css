@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.logo {
+  object-fit: contain;
+  width: auto;
+  height: 45px;
+  margin: 32px 0 0 32px;
+}
+
+div.call-to-action {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div.call-to-action > h1 {
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-align: center;
+}
+
+div.call-to-action > p {
+  font-family: Roboto;
+  font-size: 24px;
+  text-align: center;
+  color: #f2f2f2;
+  max-width: 70%;
+}
+
+.imagemPrincipal {
+  /* evite colocar nomes com espaço para arquivos, pode dar problema por conta das "\" em sistemas linux ;) */
+  /* background-image: url("./assets/imagem\ de\ fundo.png"); */
+  background-image: url("./assets/imagem_de_fundo.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.contador {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.contador > div {
+  width: 180px;
+  margin: 0 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #281748;
+}
+
+/* > é dentro de e first child é o primeiro item */
+.contador > div > p:first-child {
+  color: #F47633;
+  font-size: 80px;
+  margin: 0;
+}
+
+.contador > div > p {
+  color: #f2f2f2;
+}
+
+.formulario {
+  margin: 0 auto;
+  text-align: center;
+  color: #333333;
+  font-family: Roboto;
+  width: 40%;
+  padding: 40px 0;
+}
+
+.formulario > h2 {
+  font-family: Roboto;
+  font-size: 34px;
+  color: #281748;
+  text-align: center;
+}
+/* um jeito mais clean do que fazer uma classe pra cada coisinha */
+/* .textoInscrever {
+  width: 200px;
+  height: 16.5px;
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 40px;
+  letter-spacing: normal;
+  color: #281748;
+  text-align: center;
+} */
+
+input {
+  border: 1px solid #f2671d;
+  display: block;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(217, 30, 167, 0.3);
+  border-radius: 10px;
+  width: 100%;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+input[type='submit'] {
+ background-color: transparent;
+  font-size: 18px;
+  color: #A49A9A;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+input[type='submit']:hover {
+  background-color: #f2671d;
+  color: #222222;
+}
+
+button.btn {
+  background-color: #f2671d;
+  color: #222222;
+  font-size: 18px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+/* evite o uso de ids e códigos repetidos */
+/* #caixaFormUm {
+  justify-content: center;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #f2f2f2;
+  border: 1px solid #f2671d;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(217, 30, 167, 0.3);
+  border-radius: 10px;
+} */
+
+/* #caixaFormDois {
+  justify-content: center;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #f2f2f2;
+  border: 1px solid #f2671d;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 6px rgba(217, 30, 167, 0.3);
+  border-radius: 10px;
+} */
+
+
+.convidados {
+  background-color: #281748;
+  min-height: 75vh;
+  padding: 40px 0;
+}
+
+.convidados > h2 {
+  display: flex;
+  text-align: center;
+  display: block;
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.convidado {
+  flex: 1;
+  font-family: Roboto;
+  color: #f47633;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.convidado > img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 24px;
+  object-fit: cover;
+  margin-bottom: 24px;
+}
+
+.convidado > h4 {
+  margin: 0
+}
+
+.convidado > h4:last-child {
+  color: #f2f2f2;
+  margin-top: 8px;
+}
+
+@media (max-width: 767px) {
+  div.call-to-action > h1 {
+    white-space: normal !important;
+  }
+
+  div.call-to-action > p {
+  max-width: 90%;
+  padding-bottom: 16px;
+  }
+
+  .formulario {
+    width: 90% !important;
+  }
+
+  .contador > div > p:first-child {
+    font-size: 60px !important;
+  }
+
+  .convidado {
+    margin-top: 32px;
+  }
+  .convidado:first-child {
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .imagemPrincipal {
+    min-height: 75vh !important;
+  }
+
+  div.call-to-action > h1 {
+    white-space: normal !important;
+  }
+
+  div.call-to-action > p {
+  max-width: 90%;
+  padding-bottom: 16px;
+  }
+
+  .formulario {
+    width: 75% !important;
+  }
+
+  .contador > div > p:first-child {
+    font-size: 60px !important;
+  }
+
+  .convidados {
+    min-height: 50vh;
+  }
+
+  .convidado {
+    margin-top: 32px;
+  }
+  .convidado:first-child {
+    margin-top: 0 !important;
+  }
+}
