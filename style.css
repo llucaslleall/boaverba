@@ -87,6 +87,7 @@ div.call-to-action > p {
   color: #281748;
   text-align: center;
 }
+
 /* um jeito mais clean do que fazer uma classe pra cada coisinha */
 /* .textoInscrever {
   width: 200px;
@@ -129,12 +130,13 @@ input[type='submit'] {
 
 input[type='submit']:hover {
   background-color: #f2671d;
-  color: #222222;
+  color: #281748;
+  font-weight: bold;
 }
 
 button.btn {
   background-color: #f2671d;
-  color: #222222;
+  color: #281748;
   font-size: 18px;
   border-radius: 10px;
   width: 100%;
@@ -142,6 +144,7 @@ button.btn {
   border: none;
   cursor: pointer;
   margin-top: 16px;
+  font-weight: bold;
 }
 
 /* evite o uso de ids e códigos repetidos */
